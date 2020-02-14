@@ -26,12 +26,12 @@
                         <div class="col-xs-4">
                             <form role="form" ng-submit="submitGreeting(chatmessage)">
                                 <div class="form-group">
-                                    <label for="greeting">Message</label>
-                                    <input type="text" class="form-control" id="greeting" placeholder="Enter Greeting" ng-model="chatmessage.message"/>
+                                    <label for="greeting">Сообщение</label>
+                                    <input type="text" class="form-control" id="greeting" placeholder="ввести здесь" ng-model="chatmessage.message"/>
                                 </div>
-                                <input type="submit" class="btn btn-default" value="Submit"/>
-                                <div ng-if="connected"><span class="label label-success">Connected</span></div>
-                                <div ng-if="!connected"><span class="label label-danger">Not Connected</span></div>
+                                <input type="submit" class="btn btn-default" value="Отправить"/>
+                                <div ng-if="connected"><span class="label label-success">подключен</span></div>
+                                <div ng-if="!connected"><span class="label label-danger">отключен</span></div>
                             </form>
                         </div>
                         <div class="col-xs-8">
